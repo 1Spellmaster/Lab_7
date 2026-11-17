@@ -13,7 +13,7 @@ public class Main {
                         .noneMatch(divisor -> number % divisor == 0);
 
         // кількість одиниць у двійковій формі числа
-        ToIntFunction<Integer> countOnes = number -> Integer.bitCount(number);
+        ToIntFunction<Integer> countOnes = Integer::bitCount;
 
         Scanner scanner = new Scanner(System.in);
 
